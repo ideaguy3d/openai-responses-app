@@ -51,7 +51,9 @@ export async function POST(request: Request) {
         "Cache-Control": "no-cache",
       },
     });
-  } catch (error) {
+    
+  } 
+  catch (error) {
     console.error("Error in POST handler:", error);
     return new Response(
       JSON.stringify({
